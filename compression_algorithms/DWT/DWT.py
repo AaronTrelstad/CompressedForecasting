@@ -27,5 +27,8 @@ compressed_file_path = os.path.join(results_folder, f"compressed_DWT_{file_name}
 compressed_df = pd.DataFrame(compressed_array, columns=df_numeric.columns)
 compressed_df.to_csv(compressed_file_path, index=False)
 
+compression_ratio = len(time_series) / len(compressed_df)
+
 print("Original Shape:", time_series.shape)
 print("Compressed Shape:", compressed_array.shape)
+print(f"Compression Ratio: {compression_ratio}")

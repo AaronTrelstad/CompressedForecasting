@@ -36,6 +36,8 @@ os.makedirs(results_folder, exist_ok=True)
 compressed_file_path = os.path.join(results_folder, f"compressed_PMC_{file_name}.csv")
 compressed_df.to_csv(compressed_file_path, index=False)
 
+compression_ratio = len(time_series) / len(compressed_data)
+
 print("Original Shape:", time_series.shape)
 print("Compressed Shape:", compressed_df.shape)
-print(f"Compressed CSV saved to: {compressed_file_path}")
+print(f"Compression Ratio: {compression_ratio}")
