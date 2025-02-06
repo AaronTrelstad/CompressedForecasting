@@ -1,0 +1,1 @@
+Wavelets: It has a key advantage over Fourier Transformers since it captures both frequency and location in time. The Daubechies wavelets include a recurrence relation which is helpful in compressing time-series. Each level of decomposition splits into low and high frequencies.
