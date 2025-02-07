@@ -16,7 +16,7 @@ df = pd.read_csv(file_path)
 wavelet = 'db4'
 
 '''Decresing levels will lower compresssion ratio'''
-level = 3
+level = 2
 
 df_numeric = df.select_dtypes(include=[np.number])
 time_series = df_numeric.to_numpy()
@@ -30,7 +30,7 @@ compressed_array = np.round(np.stack(compressed_data, axis=1), 4)
 results_folder = "compressed_datasets"
 os.makedirs(results_folder, exist_ok=True) 
 
-compressed_file_path = os.path.join(results_folder, f"compressed_DWT_{file_name}_{level}.csv")
+compressed_file_path = os.path.join(results_folder, f"DWT_{file_name}_{level}.csv")
 compressed_df = pd.DataFrame(compressed_array, columns=df_numeric.columns)
 compressed_df.to_csv(compressed_file_path, index=False)
 
