@@ -1,0 +1,19 @@
+Compression Technique: RNN Autoencoder
+Description: 
+
+Dataset: GSATM (1), Target Variable: CO (ppm)
+Compression Ratios: 10
+
+LSTM:
+Uncompressed - MAPE: 13.8498%, RMSE: 0.0307, Training Time: 101.2100s, Inference Time: 0.0957s
+Compressed   - MAPE: 22.3300%, RMSE: 0.1055, Training Time: 10.9863s, Inference Time: 0.0248s
+
+Uncompressed - MAPE: 13.8498%, RMSE: 0.0307, Training Time: 104.8160s, Inference Time: 0.0557s
+Compressed   - MAPE: 9.0195%, RMSE: 0.0565, Training Time: 10.6002s, Inference Time: 0.0259s
+
+Uncompressed - MAPE: 13.8498%, RMSE: 0.0307, Training Time: 101.2886s, Inference Time: 0.0741s
+Compressed   - MAPE: 9.0195%, RMSE: 0.0565, Training Time: 10.2952s, Inference Time: 0.0408s
+
+TCN:
+Uncompressed - MAPE: 0.0949%, RMSE: 0.0002, Training Time: 90.9154s, Inference Time: 0.1259s
+Compressed   - MAPE: 1.2329%, RMSE: 0.0077, Training Time: 9.4073s, Inference Time: 0.0312s

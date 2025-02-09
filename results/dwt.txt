@@ -1,0 +1,12 @@
+Compression Technique: DWT
+Description: Discrete Wavelet Transform
+
+Dataset: GSATM (1), Target Variable: CO (ppm)
+Compression Ratios:
+1 Level: 2
+2 Level: 4
+
+LSTM:
+Uncompressed - MAPE: 13.8498%, RMSE: 0.0307, Training Time: 101.7698s, Inference Time: 0.1112s
+Compressed (1) - MAPE: 48.1472%, RMSE: 0.1220, Training Time: 52.0491s, Inference Time: 0.0482s
+Compressed (2) - MAPE: 25.6301%, RMSE: 0.0715, Training Time: 24.5548s, Inference Time: 0.0480s
